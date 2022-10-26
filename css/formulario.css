@@ -1,0 +1,169 @@
+
+.txt{
+    
+    width: 55vw;
+
+}
+
+.rd{
+    
+    padding: 10vw;
+    width: 10vw;
+}
+
+.divTransaccion{
+    width: 15vw;
+    display: inline-block;
+
+}
+
+.lblRd{
+    text-align: left;
+}
+
+
+.divIco .txtIco{
+    
+    width: 16.4vw;
+    display: inherit; 
+    padding: 0;
+}
+.divEspec{
+    width: 57vw;
+    padding-block-start:0%;
+    display: inline-block;
+    
+    
+}
+.divEspec .divIco{
+    width: 18.7vw;
+    display: inline-block;
+    padding: 0;
+    
+    
+}
+
+.icono{
+    width: 1vw;
+    height: 1vw;
+    display: inherit;
+    
+}
+
+.botones{
+    font-weight: 700;
+    color: white;
+    width: 7vw;
+    height: 1.6vw;
+    display: inline;
+    font-size: 0.7vw;
+}
+
+.botones .btnGuardar{
+    background-image: url("../img/save.png");
+    background-origin: content-box;
+    background-size: 1vw;
+    background-repeat: no-repeat;
+    background-color: green;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: inherit;
+    height: inherit;
+    
+}
+
+
+
+.botones .btnModificar{
+    
+    background-color: green;
+   font-weight: inherit;
+    color: inherit;
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+    
+    
+}
+.botones .btnEliminar{
+    
+    background-color: red;
+   font-weight: inherit;
+    color: inherit;
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+    
+    
+}
+.botones .btnCancelar{
+    background-color:bisque;
+    font-weight: inherit;
+    color: black;
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+    
+}
+
+/*--------------------------WEB RESPONSIVE--------------------------*/
+
+
+/*tablets grandes*/
+@media screen and (max-width: 1300px) {
+    .botones{
+        width: 17vw;
+        height: 4vw;
+        font-size: 1.5vw;
+    }
+    .botones .btnGuardar{
+        background-size: 3vw;
+        
+    }
+    .icono{
+        width: 2vw;
+        height: 2vw;
+        display: inline-block;
+        
+    }
+    .divIco .txtIco{
+        width: 15vw;
+    }
+
+}
+
+/*tablets medianas -24%  *0.76*/
+@media screen and (max-width: 767px) {
+    .icono{
+        width: 7vw;
+        height: 7vw;
+        display: block;
+        
+    }
+    .divEspec .divIco{
+        display: block;
+    }
+    .divIco .txtIco{
+        width: 55.3vw;
+    }
+ 
+    
+}
+
+/*smartphones -37%   *0.63*/
+@media screen and (max-width: 490px) {
+    .botones{
+        width: 27vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+    .botones .btnGuardar{
+        background-size: 3vw;
+        
+    }
+    
+    
+   
+    
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer parcial labo3 Santoliquido</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/tabla.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/spinner.css" />
+    <link rel="stylesheet" href="./css/validaciones.css" />
+</head>
+
+<body>
+    <header>
+        
+            <img src="./img/mb.png" class="imgLogo" alt="">
+            <nav class="navHeader">
+                <a href="./index.html">Nosotros</a>
+                <a href="./Administracion.html">Anuncios</a>
+                <a href="./index.html">Blog</a>
+                <a href="./index.html">Contacto</a>
+            </nav>
+        
+    </header>
+   
+    <main>
+        <section>
+            <article>
+                
+                <h1>Administracion</h1>
+
+
+            </article>
+            <article>
+                <div class="">
+                <img src="./img/nav.PNG" class="banner" alt="">
+
+                </div>
+            </article>
+        </section>
+        <br>
+        
+        <article>
+            <div class="container">
+                <div class="divFrm">
+
+
+                    <fieldset>
+                        <legend>Informacion del anuncio</legend>
+                        <form>
+                            <label for="">TITULO</label><br>
+                            <input tabindex="0" type="text" class="txt" name="titulo" id="txtTitulo"
+                                placeholder="Titulo">
+                            <small> </small>
+                            <br><br>
+
+                            <label for="">TRANSACCION</label><br><br>
+                            <div>
+                                <div class="divTransaccion">
+
+                                    <label class="lblRd" for="rdVenta">VENTA</label>
+                                </div>
+                                <input tabindex="1" type="radio" checked class="rd" name="transaccion" value="Venta"
+                                    id="rdVenta">
+                                <br>
+                                <div class="divTransaccion">
+
+                                    <label class="lblRd" for="rdAlquiler">ALQUILER</label>
+                                </div>
+                                <input tabindex="2" type="radio" class="rd" name="transaccion" value="Alquiler"
+                                    id="rdAlquiler">
+                                <br><br>
+
+                            </div>
+
+                            <label for="">DESCRIPCION</label><br>
+                            <input tabindex="3" type="text" class="txt" name="descripcion" id="txtDescripcion"
+                                placeholder="Descripcion">
+                            <small> </small>
+                            <br>
+                            <br>
+                            <label for="">PRECIO</label><br>
+                            <input tabindex="4" type="text" class="txt" name="precio" id="txtPrecio"
+                                placeholder="Precio">
+                            <small> </small>
+                            <br><br>
+                            <div class="divEspec">
+
+                                <div class="divIco">
+                                    <img src="./img/puerta.png" class="icono" alt="puertas">
+                                    <input tabindex="5" type="text" class="txtIco" name="puertas" id="txtPuertas"
+                                        placeholder="Puertas">
+                                    <small> </small>
+                                </div>
+                                <div class="divIco">
+                                    <img src="./img/velocimetro.png" class="icono" alt="kms">
+                                    <input tabindex="6" type="text" class="txtIco" name="kms" id="txtKms"
+                                        placeholder="KMs">
+                                    <small> </small>
+                                </div>
+                                <div class="divIco">
+                                    <img src="./img/potencia.png" class="icono" alt="potencia">
+                                    <input tabindex="7" type="text" class="txtIco" name="potencia" id="txtPotencia"
+                                        placeholder="Potencia">
+                                    <small> </small>
+                                </div>
+                            </div>
+                            <input tabindex="8" type="hidden" class="txt" name="id" id="txtId" hidden>
+                            <br><br><br>
+
+                            <div class="botones">
+                                <input type="submit" class="btnGuardar" name="btnGuardar" value="Guardar">
+                                <input type="hidden" class="btnModificar" name="btnModificar" value="modificar">
+                                <input type="hidden" class="btnEliminar" name="btnEliminar" value="eliminar">
+                                <input type="hidden" class="btnCancelar" name="btnCancelar" value="cancelar">
+                            </div>
+                            <br>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+
+
+        </article>
+
+
+        
+        <div name="spiner" class="oculto">
+            <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(2 1)" stroke="#002742" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01" stroke-width="3"/>
+                    <ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808"/>
+                    <ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808"/>
+                    <path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="3"/>
+                    <path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="3"/>
+                    <path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="3"/>
+                </g>
+            </svg>
+            
+                
+            </div>
+    
+    </main>
+    <br><br><br>
+    <section>
+        <div class="divTabla"></div>
+    </section>
+
+    
+    <br><br>
+    <footer>
+
+        <nav class="navfooterL">
+            <a href="">Nosotros</a>
+            <a href="./Anuncios.html">Anuncios</a>
+            <a href="./index.html">Blog</a>
+            <a href="">Contacto</a>
+        </nav>
+
+        <nav class="navfooterR"> 
+            <a href="">Todos los derechos reservados</a>
+
+        </nav>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/validaciones.js" type="module"></script>
+</body>
+
+</html>
